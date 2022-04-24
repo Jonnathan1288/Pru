@@ -21,9 +21,9 @@ import javax.swing.JOptionPane;
 public class ConectionPg {
     private Connection con;
     private 
-    String cadConexion = "jdbc:postgresql://ec2-52-3-60-53.compute-1.amazonaws.com:5432/d2thsbbbm990l3";
-    String pgUser = "vlwwpgmevwjntg"; 
-    String pgPaswd = "28201ba29d60dd02235e1da5cf9f126454410e9580750975215cf954f708d258";
+    String cadConexion = "jdbc:postgresql://ec2-54-80-123-146.compute-1.amazonaws.com:5432/da6mm0acjnobd0";
+    String pgUser = "zdijmgrjjcsyll"; 
+    String pgPaswd = "9f835f3d2fc59b38e100e8835cde92884c82eaba9b085b870074d0fecab90f20";
 
     public ConectionPg() {
         try {

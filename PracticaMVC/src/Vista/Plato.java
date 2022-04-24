@@ -5,7 +5,10 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JDialog;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -28,6 +31,31 @@ public class Plato extends javax.swing.JInternalFrame {
         this.TablePERSO = TablePERSO;
     }
 
+    public JDialog getDialogoPlato() {
+        return DialogoPlato;
+    }
+
+    public void setDialogoPlato(JDialog DialogoPlato) {
+        this.DialogoPlato = DialogoPlato;
+    }
+
+    public JTextField getTxtPrecio() {
+        return TxtPrecio;
+    }
+
+    public void setTxtPrecio(JTextField TxtPrecio) {
+        this.TxtPrecio = TxtPrecio;
+    }
+
+    public JButton getBtnCrear() {
+        return btnCrear;
+    }
+
+    public void setBtnCrear(JButton btnCrear) {
+        this.btnCrear = btnCrear;
+    }
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -37,6 +65,8 @@ public class Plato extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        DialogoPlato = new javax.swing.JDialog();
+        TxtPrecio = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         TxtBuscar = new javax.swing.JTextField();
@@ -47,6 +77,24 @@ public class Plato extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         TablePERSO = new javax.swing.JTable();
 
+        javax.swing.GroupLayout DialogoPlatoLayout = new javax.swing.GroupLayout(DialogoPlato.getContentPane());
+        DialogoPlato.getContentPane().setLayout(DialogoPlatoLayout);
+        DialogoPlatoLayout.setHorizontalGroup(
+            DialogoPlatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DialogoPlatoLayout.createSequentialGroup()
+                .addGap(146, 146, 146)
+                .addComponent(TxtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(67, Short.MAX_VALUE))
+        );
+        DialogoPlatoLayout.setVerticalGroup(
+            DialogoPlatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(DialogoPlatoLayout.createSequentialGroup()
+                .addGap(136, 136, 136)
+                .addComponent(TxtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(144, Short.MAX_VALUE))
+        );
+
+        setClosable(true);
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(154, 184, 166));
@@ -73,16 +121,16 @@ public class Plato extends javax.swing.JInternalFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(TxtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(TxtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnCrear)
-                .addGap(78, 78, 78)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnEditar)
-                .addGap(77, 77, 77)
+                .addGap(18, 18, 18)
                 .addComponent(btnRemover)
-                .addGap(77, 77, 77)
+                .addGap(18, 18, 18)
                 .addComponent(btnImprimir)
-                .addGap(94, 94, 94))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,7 +162,7 @@ public class Plato extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(145, 145, 145)
+                .addGap(28, 28, 28)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -122,9 +170,9 @@ public class Plato extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(267, 267, 267))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         pack();
@@ -133,8 +181,10 @@ public class Plato extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog DialogoPlato;
     private javax.swing.JTable TablePERSO;
     private javax.swing.JTextField TxtBuscar;
+    private javax.swing.JTextField TxtPrecio;
     private javax.swing.JButton btnCrear;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnImprimir;

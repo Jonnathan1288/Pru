@@ -14,6 +14,7 @@ import Vista.MenuPrincipal;
  */
 public class Main_Ejecutar {
     public static void main(String[] args) {
+        System.out.println("Hola como estaas");
         MenuPrincipal mp = new MenuPrincipal();
         ControladorMenu cp = new ControladorMenu(mp);
         cp.controlBoton();

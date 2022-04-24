@@ -30,13 +30,13 @@ public class ModeloPlato extends Platos{
     public List<Platos> litaaaaa() {
 
         List<Platos> lpa = new ArrayList<Platos>();
-        String sql = "select * from persona;";
+        String sql = "select * from per;";
         ResultSet rs = cp.consulta(sql);
         try {
             while (rs.next()) {
                 Platos pa = new Platos();
-                pa.setCedula(rs.getString("cedula"));
-                pa.setNombre(rs.getString("nombre"));
+                pa.setCedula(rs.getString("nom"));
+                pa.setNombre(rs.getString("ape"));
                 lpa.add(pa);
             }
             rs.close();
